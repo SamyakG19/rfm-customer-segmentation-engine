@@ -47,6 +47,7 @@ Transitioning from descriptive to predictive analytics, this project utilizes th
 * **Feature Importance & Strategy:** The model mathematically proved that **Purchase Frequency (46.7%)** is a significantly stronger indicator of loyalty than **Total Monetary Spend (39.4%)**. This translates to a direct business recommendation: pivot marketing spend away from generic discounts and toward subscription or punch-card models to artificially drive repeat visits.
 
 🚀 How to Run This Project
+
 0. Prerequisites: Download the raw e-commerce dataset from Kaggle and place it in the /raw_data directory. Ensure your Google Cloud / BigQuery credentials.json file is securely placed in the root directory (ensure it matches the .gitignore rules).
 
 1. Database Setup: Execute the Python script in /python to ingest, clean, and load the raw .csv into your BigQuery environment.
