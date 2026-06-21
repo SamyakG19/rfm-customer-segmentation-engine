@@ -31,7 +31,7 @@ The project is structured to mirror a production-grade data engineering workspac
 ├── sql/                        # Analytical BigQuery modeling and RFM scoring logic
 ├── .gitignore                  # Security guardrails for credentials and heavy data
 └── README.md                   # Executive summary and documentation
-
+```
 📈 Key Business Insights Discovered
 Total Portfolio Value: Analyzed 4,339 unique customers generating $8.91M in total revenue, establishing a baseline Average Revenue Per User (ARPU) of $2.05K.
 
