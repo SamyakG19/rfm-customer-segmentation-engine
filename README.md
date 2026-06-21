@@ -39,6 +39,13 @@ The Revenue Disconnect: Revealed a stark volume-to-value contrast. The "Champion
 
 At-Risk Capital: Identified a critical mass of users slipping into the "At Risk / Needs Attention" and "Lost / Churned" segments, isolating the exact financial liability the retention marketing team needs to target to prevent revenue leakage.
 
+## 🤖 Phase 2: Predictive Machine Learning (Churn Forecasting)
+Transitioning from descriptive to predictive analytics, this project utilizes the engineered RFM metrics to train a **Random Forest Classifier** designed to catch churning customers before they leave.
+
+* **Algorithmic Approach:** Purposely excluded the `Recency` variable to prevent target leakage, forcing the model to predict churn risk strictly based on purchasing habits (`Frequency`, `Monetary`, and an engineered `Average Order Value` feature).
+* **Handling Imbalanced Data:** Applied balanced class weights to penalize false negatives, successfully increasing the model's **Recall to 80%** for the churn class—prioritizing the business goal of catching at-risk customers over raw precision.
+* **Feature Importance & Strategy:** The model mathematically proved that **Purchase Frequency (46.7%)** is a significantly stronger indicator of loyalty than **Total Monetary Spend (39.4%)**. This translates to a direct business recommendation: pivot marketing spend away from generic discounts and toward subscription or punch-card models to artificially drive repeat visits.
+
 🚀 How to Run This Project
 0. Prerequisites: Download the raw e-commerce dataset from Kaggle and place it in the /raw_data directory. Ensure your Google Cloud / BigQuery credentials.json file is securely placed in the root directory (ensure it matches the .gitignore rules).
 
